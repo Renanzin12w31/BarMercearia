@@ -20,18 +20,33 @@
     </div>
   </div>
 
-  <nav>
+  <!-- MENU DESKTOP -->
+  <nav class="desktop-menu">
     <a href="#">Início</a>
     <a href="#servicos">O que tem</a>
     <a href="#sobre">Sobre nós</a>
     <a href="#localizacao">Localização</a>
   </nav>
 
-  <a class="whatsapp"
+  <a class="whatsapp desktop-btn"
      href="https://wa.me/5515996318154?text=Oi%2C%20tudo%20bem%3F%20Tenho%20uma%20d%C3%BAvida.">
      WhatsApp
   </a>
+
+  <!-- BOTÃO MOBILE -->
+  <div class="menu-toggle" id="menu-toggle">☰</div>
 </header>
+
+<!-- MENU MOBILE -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#">Início</a>
+  <a href="#servicos">O que tem</a>
+  <a href="#sobre">Sobre nós</a>
+  <a href="#localizacao">Localização</a>
+  <a href="https://wa.me/5515996318154?text=Oi%2C%20tudo%20bem%3F%20Tenho%20uma%20d%C3%BAvida.">
+    WhatsApp
+  </a>
+</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -68,43 +83,29 @@
   <h2>O que você encontra</h2>
 
   <div class="grid">
-    <div class="item">
-      <h3>🥤 Bebidas</h3>
-      <p>Refrigerantes, águas, cervejas e bebidas geladas.</p>
-    </div>
-
-    <div class="item">
-      <h3>🍗 Salgados</h3>
-      <p>Coxinhas, bolinhos e opções rápidas.</p>
-    </div>
-
-    <div class="item">
-      <h3>🎱 Mesa de bilhar</h3>
-      <p>Um espaço simples pra jogar e conversar.</p>
-    </div>
-
-    <div class="item">
-      <h3>🛒 Mercearia</h3>
-      <p>Itens básicos e conveniência.</p>
-    </div>
+    <div class="item"><h3>🥤 Bebidas</h3><p>Bebidas geladas.</p></div>
+    <div class="item"><h3>🍗 Salgados</h3><p>Opções rápidas.</p></div>
+    <div class="item"><h3>🎱 Mesa de bilhar</h3><p>Espaço para jogar.</p></div>
+    <div class="item"><h3>🛒 Mercearia</h3><p>Itens básicos.</p></div>
   </div>
 </section>
 
 <!-- SOBRE -->
 <section id="sobre" class="sobre">
   <div class="sobre-container">
+
     <div class="sobre-texto">
       <span class="section-label">Sobre nós</span>
-      <h2>Uma mercearia de família, feita com respeito e integridade.</h2>
+
+      <h2>Uma mercearia simples, com atendimento de verdade.</h2>
 
       <p>
-        A Bar e Mercearia Família Oliveira é um ponto de confiança para quem mora por perto
-        ou passa pela Rodovia Carolina Paes Graneiro.
+        A Bar e Mercearia Família Oliveira é um ponto de confiança para quem passa pela estrada
+        ou mora por perto.
       </p>
 
       <p>
-        Aqui o atendimento é familiar, direto e honesto. Temos bebidas, salgados e um espaço
-        simples para conversar, jogar bilhar ou fazer uma parada rápida no dia.
+        Atendimento direto, ambiente simples e aquele clima de bairro que faz você querer voltar.
       </p>
 
       <p class="destaque">
@@ -113,40 +114,29 @@
     </div>
 
     <div class="sobre-card">
-      <h3>O que torna o lugar especial?</h3>
+      <h3>O que você encontra aqui</h3>
 
       <ul>
-        <li>Atendimento próximo e familiar</li>
-        <li>Bebidas geladas e salgados</li>
-        <li>Mesa de bilhar para reunir a turma</li>
-        <li>Clima simples, de bairro e de confiança</li>
+        <li>Bebidas sempre geladas</li>
+        <li>Salgados rápidos</li>
+        <li>Mesa de bilhar</li>
+        <li>Ambiente tranquilo</li>
       </ul>
     </div>
+
   </div>
 </section>
 
 <!-- LOCALIZAÇÃO -->
 <section id="localizacao" class="localizacao">
   <div class="localizacao-container">
+
     <div class="localizacao-info">
       <span class="section-label">Localização</span>
-      <h2>Estamos em Piedade - SP</h2>
 
-      <p>
-        Rod. Carolina Paes Graneiro, km 4 - Piedade/SP
-      </p>
+      <h2>Piedade - SP</h2>
 
-      <div class="localizacao-detalhes">
-        <div>
-          <span>Referência</span>
-          <strong>Km 4 da Rodovia Carolina Paes Graneiro</strong>
-        </div>
-
-        <div>
-          <span>Horário</span>
-          <strong>Todos os dias • 8h às 22h</strong>
-        </div>
-      </div>
+      <p>Rod. Carolina Paes Graneiro, km 4</p>
 
       <a href="https://maps.app.goo.gl/wAfbWwbbdsgBBpvK9"
          target="_blank"
@@ -157,11 +147,21 @@
 
     <div class="localizacao-card">
       <span>📍</span>
-      <strong>Bar e Mercearia Família Oliveira</strong>
-      <p>Toque no botão para abrir a localização correta no Google Maps.</p>
+      <strong>Toque para abrir no Maps</strong>
     </div>
+
   </div>
 </section>
+
+<!-- SCRIPT MENU -->
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
 
 </body>
 </html>
