@@ -1,0 +1,90 @@
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+body{background:#f5f5f5;color:#111}
+
+/* HEADER */
+.header{
+display:flex;justify-content:space-between;align-items:center;
+padding:15px 8%;background:#fff;position:sticky;top:0;z-index:100;
+}
+
+.logo{display:flex;gap:10px;align-items:center}
+.logo-icon{background:#1f7a3a;color:#fff;padding:10px;border-radius:10px}
+
+.desktop-menu a{margin:0 10px;text-decoration:none;color:#333}
+
+.whatsapp{background:#1f7a3a;color:#fff;padding:10px 18px;border-radius:999px;text-decoration:none}
+
+/* MOBILE MENU */
+.menu-toggle{display:none;font-size:26px;cursor:pointer}
+
+.mobile-menu{
+display:none;flex-direction:column;
+background:#fff;padding:20px;gap:15px;border-top:1px solid #eee;
+}
+.mobile-menu.active{display:flex}
+
+/* HERO */
+.hero{
+height:90vh;
+background:url("bar-mercearia-banner.webp") center/cover no-repeat;
+display:flex;align-items:center;padding:0 8%;color:#fff;position:relative;
+}
+.overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,.7),rgba(0,0,0,.2))}
+.hero-content{position:relative;z-index:2;max-width:500px}
+
+/* ANIMAÇÃO */
+.hero-content>*{opacity:0;transform:translateY(30px);animation:fadeUp .8s forwards}
+.hero-content>*:nth-child(1){animation-delay:.2s}
+.hero-content>*:nth-child(2){animation-delay:.4s}
+.hero-content>*:nth-child(3){animation-delay:.6s}
+
+@keyframes fadeUp{
+to{opacity:1;transform:translateY(0)}
+}
+
+.status{background:#fff;color:#1f7a3a;padding:6px 14px;border-radius:999px;font-size:13px;margin-bottom:15px}
+.title{font-size:3rem;font-weight:800;margin-bottom:20px}
+
+/* BOTÕES */
+.buttons{display:flex;gap:10px}
+.btn-primary{background:#1f7a3a;color:#fff;padding:12px 20px;border-radius:999px;text-decoration:none}
+.btn-secondary{border:2px solid #fff;padding:12px 20px;border-radius:999px;color:#fff;text-decoration:none}
+
+/* INFO */
+.info{display:flex;gap:20px;justify-content:center;margin-top:-40px;padding:0 8%}
+.card{background:#fff;padding:20px;border-radius:12px}
+
+/* SERVIÇOS */
+.servicos{padding:80px 8%}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.item{background:#fff;padding:25px;border-radius:18px}
+
+/* SOBRE */
+.sobre{padding:80px 8%;background:#ebe6dd}
+.sobre-container{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.sobre-texto{background:#fff;padding:30px;border-radius:20px}
+.sobre-card{background:#1f7a3a;color:#fff;padding:30px;border-radius:20px}
+.section-label{color:#1f7a3a;font-weight:700;font-size:13px}
+.destaque{font-weight:800}
+
+/* LOCALIZAÇÃO */
+.localizacao{padding:80px 8%;background:#111;color:#fff}
+.localizacao-container{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.localizacao-info{background:#fff;color:#111;padding:30px;border-radius:20px}
+.localizacao-card{background:#1f7a3a;padding:30px;border-radius:20px;text-align:center}
+
+/* RESPONSIVO */
+@media(max-width:768px){
+
+.desktop-menu,.desktop-btn{display:none}
+.menu-toggle{display:block}
+
+.hero{background:url("mobimage.webp") center/cover no-repeat}
+.title{font-size:2rem}
+
+.grid{grid-template-columns:1fr}
+.info{flex-direction:column}
+.sobre-container,.localizacao-container{grid-template-columns:1fr}
+
+}
