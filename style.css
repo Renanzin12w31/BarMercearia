@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  color: #111;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  background: #1f7a3a;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.logo span {
+  display: block;
+  font-size: 12px;
+  color: gray;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.whatsapp {
+  background: #1f7a3a;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 90vh;
+  background: url("bar-mercearia-banner.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.2));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+}
+
+/* ANIMAÇÃO */
+.hero-content > * {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.hero-content > *:nth-child(1) { animation-delay: 0.2s; }
+.hero-content > *:nth-child(2) { animation-delay: 0.4s; }
+.hero-content > *:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.status {
+  background: white;
+  color: #1f7a3a;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+/* BOTÕES */
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-primary {
+  background: #1f7a3a;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s ease;
+}
+
+.btn-primary:hover {
+  background: #17612d;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(31, 122, 58, 0.2);
+}
+
+.btn-secondary {
+  border: 2px solid white;
+  padding: 12px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: white;
+}
+
+/* INFO */
+.info {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: -40px;
+  padding: 0 8%;
+  position: relative;
+  z-index: 2;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* SERVIÇOS */
+.servicos {
+  padding: 80px 8%;
+  background: #f7f7f7;
+}
+
+.servicos h2 {
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.item {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  transition: 0.3s;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* SOBRE */
+.sobre {
+  padding: 90px 8%;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(31, 122, 58, 0.12), transparent 28%),
+    #ebe6dd;
+}
+
+.sobre-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.sobre-texto,
+.sobre-card {
+  border-radius: 28px;
+  box-shadow: 0 14px 36px rgba(0,0,0,0.07);
+}
+
+.sobre-texto {
+  background: linear-gradient(180deg, #ffffff, #fbfaf6);
+  padding: 44px;
+}
+
+.section-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #1f7a3a;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.sobre h2,
+.localizacao h2 {
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  margin-bottom: 18px;
+}
+
+.sobre p {
+  color: #4f4f4f;
+  font-size: 17px;
+  line-height: 1.7;
+  margin-top: 16px;
+  max-width: 760px;
+}
+
+.destaque {
+  font-weight: 800;
+  color: #111 !important;
+}
+
+.sobre-card {
+  background: linear-gradient(135deg, rgba(31, 122, 58, 0.98), rgba(20, 89, 40, 0.98));
+  color: white;
+  padding: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sobre-card h3 {
+  font-size: 28px;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  margin-bottom: 24px;
+}
+
+.sobre-card ul {
+  list-style: none;
+  display: grid;
+  gap: 14px;
+}
+
+.sobre-card li {
+  position: relative;
+  padding-left: 28px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.92);
+}
+
+.sobre-card li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 900;
+}
+
+/* LOCALIZAÇÃO */
+.localizacao {
+  padding: 90px 8%;
+  background:
+    radial-gradient(circle at 20% 25%, rgba(31, 122, 58, 0.18), transparent 28%),
+    linear-gradient(135deg, #191917, #262620);
+  text-align: left;
+}
+
+.localizacao-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.localizacao-info {
+  background: white;
+  color: #111;
+  border-radius: 28px;
+  padding: 44px;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.14);
+}
+
+.localizacao-info p {
+  color: #555;
+  font-size: 17px;
+  line-height: 1.65;
+  margin-bottom: 24px;
+}
+
+.localizacao-detalhes {
+  display: grid;
+  gap: 14px;
+  margin: 26px 0 30px;
+}
+
+.localizacao-detalhes div {
+  background: #f7f5ef;
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.localizacao-detalhes span {
+  display: block;
+  margin-bottom: 6px;
+  color: #777;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.localizacao-detalhes strong {
+  font-size: 16px;
+}
+
+.localizacao-card {
+  min-height: 370px;
+  border-radius: 28px;
+  padding: 40px;
+  background:
+    linear-gradient(135deg, rgba(31, 122, 58, 0.92), rgba(20, 89, 40, 0.96)),
+    url("bar-mercearia-banner.webp");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.14);
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.localizacao-card span {
+  display: inline-grid;
+  place-items: center;
+  width: 74px;
+  height: 74px;
+  border-radius: 24px;
+  background: rgba(255,255,255,0.16);
+  font-size: 32px;
+  margin: 0 auto 18px;
+}
+
+.localizacao-card strong {
+  display: block;
+  max-width: 420px;
+  font-size: 30px;
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+  margin-bottom: 12px;
+}
+
+.localizacao-card p {
+  max-width: 420px;
+  color: rgba(255,255,255,0.84);
+  line-height: 1.6;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+  nav {
+    display: none;
+  }
+
+  .hero {
+    background-image: url("mobimage.webp");
+    background-position: center;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .sobre,
+  .localizacao {
+    padding: 64px 20px;
+  }
+
+  .sobre-container,
+  .localizacao-container {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre-texto,
+  .sobre-card,
+  .localizacao-info,
+  .localizacao-card {
+    padding: 26px;
+    border-radius: 22px;
+  }
+
+  .sobre h2,
+  .localizacao h2 {
+    font-size: 2rem;
+  }
+
+  .localizacao-card {
+    min-height: 300px;
+  }
+
+  .localizacao-card strong {
+    font-size: 24px;
+  }
+}
