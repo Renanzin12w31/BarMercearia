@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Contato | Família Oliveira</title>
+  <meta name="description" content="Veja endereço, horário de funcionamento e fale direto pelo WhatsApp com a Família Oliveira.">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">
+    <div class="logo-icon">FO</div>
+    <div>
+      <strong>Família Oliveira</strong>
+      <span>Bar e Mercearia</span>
+    </div>
+  </div>
+
+  <!-- MENU DESKTOP -->
+  <nav class="desktop-menu">
+    <a href="index.html">Início</a>
+    <a href="index.html#servicos">O que tem</a>
+    <a href="sobre-nos.html">Sobre nós</a>
+    <a href="contato.html">Contato</a>
+    <a href="localizacao.html">Localização</a>
+  </nav>
+
+  <a class="whatsapp desktop-btn"
+     href="https://wa.me/5515996318154?text=Oi%2C%20tudo%20bem%3F%20Tenho%20uma%20d%C3%BAvida.">
+     WhatsApp
+  </a>
+
+  <!-- BOTÃO MOBILE -->
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+</header>
+
+<!-- MENU MOBILE -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Início</a>
+  <a href="index.html#servicos">O que tem</a>
+  <a href="sobre-nos.html">Sobre nós</a>
+  <a href="contato.html">Contato</a>
+  <a href="localizacao.html">Localização</a>
+  <a href="https://wa.me/5515996318154?text=Oi%2C%20tudo%20bem%3F%20Tenho%20uma%20d%C3%BAvida.">
+    WhatsApp
+  </a>
+</div>
+
+<section class="page-intro">
+  <span class="section-label">Família Oliveira</span>
+  <h1>Contato</h1>
+  <p>Veja endereço, horário de funcionamento e fale direto pelo WhatsApp com a Família Oliveira.</p>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="contato">
+  <div class="contato-container">
+    <div>
+      <span class="section-label">Contato</span>
+      <h2>Informações para visita</h2>
+      <p>Confira endereço, horário e fale direto pelo WhatsApp.</p>
+    </div>
+
+    <div class="contato-grid">
+      <div class="contato-item">
+        <span>📍</span>
+        <strong>Endereço</strong>
+        <p>Rod. Carolina Paes Graneiro, km 4<br>Piedade - SP</p>
+      </div>
+
+      <div class="contato-item">
+        <span>⏰</span>
+        <strong>Horário</strong>
+        <p>Todos os dias<br>08h às 22h</p>
+      </div>
+
+      <div class="contato-item">
+        <span>💬</span>
+        <strong>WhatsApp</strong>
+        <p>Atendimento direto para dúvidas rápidas.</p>
+        <a href="https://wa.me/5515996318154?text=Oi%2C%20tudo%20bem%3F%20Tenho%20uma%20d%C3%BAvida." class="mini-link">Falar agora</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCRIPT MENU -->
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>

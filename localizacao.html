@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Localização | Família Oliveira</title>
+  <meta name="description" content="Encontre a Mercearia Família Oliveira na Rod. Carolina Paes Graneiro, km 4, em Piedade - SP.">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">
+    <div class="logo-icon">FO</div>
+    <div>
+      <strong>Família Oliveira</strong>
+      <span>Bar e Mercearia</span>
+    </div>
+  </div>
+
+  <!-- MENU DESKTOP -->
+  <nav class="desktop-menu">
+    <a href="index.html">Início</a>
+    <a href="index.html#servicos">O que tem</a>
+    <a href="sobre-nos.html">Sobre nós</a>
+    <a href="contato.html">Contato</a>
+    <a href="localizacao.html">Localização</a>
+  </nav>
+
+  <a class="whatsapp desktop-btn"
+     href="https://wa.me/5515996318154?text=Oi%2C%20tudo%20bem%3F%20Tenho%20uma%20d%C3%BAvida.">
+     WhatsApp
+  </a>
+
+  <!-- BOTÃO MOBILE -->
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+</header>
+
+<!-- MENU MOBILE -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Início</a>
+  <a href="index.html#servicos">O que tem</a>
+  <a href="sobre-nos.html">Sobre nós</a>
+  <a href="contato.html">Contato</a>
+  <a href="localizacao.html">Localização</a>
+  <a href="https://wa.me/5515996318154?text=Oi%2C%20tudo%20bem%3F%20Tenho%20uma%20d%C3%BAvida.">
+    WhatsApp
+  </a>
+</div>
+
+<section class="page-intro">
+  <span class="section-label">Família Oliveira</span>
+  <h1>Localização</h1>
+  <p>Encontre a Mercearia Família Oliveira na Rod. Carolina Paes Graneiro, km 4, em Piedade - SP.</p>
+</section>
+
+
+
+<!-- SCRIPT MENU -->
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>

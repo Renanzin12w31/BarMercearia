@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Sobre nós | Família Oliveira</title>
+  <meta name="description" content="Conheça a Mercearia Família Oliveira, um ponto de apoio simples e prático para moradores e visitantes em Piedade - SP.">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">
+    <div class="logo-icon">FO</div>
+    <div>
+      <strong>Família Oliveira</strong>
+      <span>Bar e Mercearia</span>
+    </div>
+  </div>
+
+  <!-- MENU DESKTOP -->
+  <nav class="desktop-menu">
+    <a href="index.html">Início</a>
+    <a href="index.html#servicos">O que tem</a>
+    <a href="sobre-nos.html">Sobre nós</a>
+    <a href="contato.html">Contato</a>
+    <a href="localizacao.html">Localização</a>
+  </nav>
+
+  <a class="whatsapp desktop-btn"
+     href="https://wa.me/5515996318154?text=Oi%2C%20tudo%20bem%3F%20Tenho%20uma%20d%C3%BAvida.">
+     WhatsApp
+  </a>
+
+  <!-- BOTÃO MOBILE -->
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+</header>
+
+<!-- MENU MOBILE -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Início</a>
+  <a href="index.html#servicos">O que tem</a>
+  <a href="sobre-nos.html">Sobre nós</a>
+  <a href="contato.html">Contato</a>
+  <a href="localizacao.html">Localização</a>
+  <a href="https://wa.me/5515996318154?text=Oi%2C%20tudo%20bem%3F%20Tenho%20uma%20d%C3%BAvida.">
+    WhatsApp
+  </a>
+</div>
+
+<section class="page-intro">
+  <span class="section-label">Família Oliveira</span>
+  <h1>Sobre nós</h1>
+  <p>Conheça a Mercearia Família Oliveira, um ponto de apoio simples e prático para moradores e visitantes em Piedade - SP.</p>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="sobre">
+  <div class="sobre-container">
+
+    <div class="sobre-texto">
+      <span class="section-label">Sobre nós</span>
+
+      <h2>Um ponto de apoio para quem passa por Piedade.</h2>
+
+      <p>
+        A Mercearia Família Oliveira atende moradores e quem está de passagem pela região.
+      </p>
+
+      <p>
+        Local simples, com atendimento direto e foco no essencial: bebidas geladas, itens básicos
+        e um ambiente tranquilo.
+      </p>
+
+      <p class="destaque">
+        Funcionamos como uma parada prática na estrada, com tudo o que você precisa no momento certo.
+      </p>
+    </div>
+
+    <div class="sobre-card">
+      <h3>O que você encontra aqui</h3>
+
+      <ul>
+        <li>Bebidas sempre geladas</li>
+        <li>Salgados rápidos</li>
+        <li>Mesa de bilhar</li>
+        <li>Ambiente tranquilo</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- SCRIPT MENU -->
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
