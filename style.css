@@ -841,20 +841,34 @@ body {
 
 @media(max-width: 768px) {
   .whatsapp-float {
-    left: 16px;
     right: 16px;
     bottom: 16px;
-    min-width: 0;
-    justify-content: flex-start;
-    padding: 11px 15px 11px 11px;
+    left: auto;
+
+    width: 58px;
+    height: 58px;
+    padding: 0;
+
+    border-radius: 50%;
+    min-width: unset;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wa-text {
+    display: none;
   }
 
   .wa-icon {
-    width: 46px;
-    height: 46px;
-    min-width: 46px;
-    font-size: 20px;
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+    border-radius: 50%;
+    font-size: 22px;
   }
+}
 
   .wa-text strong {
     font-size: 15px;
@@ -863,4 +877,4 @@ body {
   .wa-text span {
     font-size: 12px;
   }
-}
+
