@@ -93,14 +93,29 @@
   </div>
 </section>
 
+
+<!-- BOTÃO WHATSAPP FLUTUANTE -->
+<a href="https://wa.me/5515996318154?text=Ol%C3%A1%2C%20voc%C3%AAs%20est%C3%A3o%20abertos%20agora%3F"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Falar no WhatsApp">
+  <div class="wa-icon">💬</div>
+  <div class="wa-text">
+    <strong>Falar no WhatsApp</strong>
+    <span>Chame para saber sobre produtos</span>
+  </div>
+</a>
+
 <!-- SCRIPT MENU -->
 <script>
   const toggle = document.getElementById('menu-toggle');
   const menu = document.getElementById('mobile-menu');
 
-  toggle.addEventListener('click', () => {
-    menu.classList.toggle('active');
-  });
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  }
 </script>
 
 </body>
