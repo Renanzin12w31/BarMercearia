@@ -11,7 +11,7 @@
 <body>
 
 <!-- HEADER -->
-<header class="header">
+<header class="header" id="site-header">
   <div class="logo">
     <div class="logo-icon">FO</div>
     <div>
@@ -35,11 +35,11 @@
   </a>
 
   <!-- BOTÃO MOBILE -->
-  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
 </header>
 
 <!-- MENU MOBILE -->
-<div class="mobile-menu" id="mobile-menu">
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
   <a href="index.html">Início</a>
   <a href="index.html#servicos">O que tem</a>
   <a href="sobre-nos.html">Sobre nós</a>
@@ -50,35 +50,35 @@
   </a>
 </div>
 
-<section class="page-intro">
+<section class="page-intro reveal">
   <span class="section-label">Família Oliveira</span>
   <h1>Contato</h1>
   <p>Veja endereço, horário de funcionamento e fale direto pelo WhatsApp com a Família Oliveira.</p>
 </section>
 
 <!-- CONTATO -->
-<section id="contato" class="contato">
+<section id="contato" class="contato reveal">
   <div class="contato-container">
-    <div>
+    <div class="reveal">
       <span class="section-label">Contato</span>
       <h2>Informações para visita</h2>
       <p>Confira endereço, horário e fale direto pelo WhatsApp.</p>
     </div>
 
     <div class="contato-grid">
-      <div class="contato-item">
+      <div class="contato-item reveal">
         <span>📍</span>
         <strong>Endereço</strong>
         <p>Rod. Carolina Paes Graneiro, km 4<br>Piedade - SP</p>
       </div>
 
-      <div class="contato-item">
+      <div class="contato-item reveal">
         <span>⏰</span>
         <strong>Horário</strong>
         <p>Todos os dias<br>08h às 22h</p>
       </div>
 
-      <div class="contato-item">
+      <div class="contato-item reveal">
         <span>💬</span>
         <strong>WhatsApp</strong>
         <p>Atendimento direto para dúvidas rápidas.</p>
@@ -101,17 +101,7 @@
   </div>
 </a>
 
-<!-- SCRIPT MENU -->
-<script>
-  const toggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('mobile-menu');
-
-  if (toggle && menu) {
-    toggle.addEventListener('click', () => {
-      menu.classList.toggle('active');
-    });
-  }
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>

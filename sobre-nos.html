@@ -11,7 +11,7 @@
 <body>
 
 <!-- HEADER -->
-<header class="header">
+<header class="header" id="site-header">
   <div class="logo">
     <div class="logo-icon">FO</div>
     <div>
@@ -35,11 +35,11 @@
   </a>
 
   <!-- BOTÃO MOBILE -->
-  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
 </header>
 
 <!-- MENU MOBILE -->
-<div class="mobile-menu" id="mobile-menu">
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
   <a href="index.html">Início</a>
   <a href="index.html#servicos">O que tem</a>
   <a href="sobre-nos.html">Sobre nós</a>
@@ -50,17 +50,17 @@
   </a>
 </div>
 
-<section class="page-intro">
+<section class="page-intro reveal">
   <span class="section-label">Família Oliveira</span>
   <h1>Sobre nós</h1>
   <p>Conheça a Mercearia Família Oliveira, um ponto de apoio simples e prático para moradores e visitantes em Piedade - SP.</p>
 </section>
 
 <!-- SOBRE -->
-<section id="sobre" class="sobre">
+<section id="sobre" class="sobre reveal">
   <div class="sobre-container">
 
-    <div class="sobre-texto">
+    <div class="sobre-texto reveal">
       <span class="section-label">Sobre nós</span>
 
       <h2>Um ponto de apoio para quem passa por Piedade.</h2>
@@ -79,7 +79,7 @@
       </p>
     </div>
 
-    <div class="sobre-card">
+    <div class="sobre-card reveal">
       <h3>O que você encontra aqui</h3>
 
       <ul>
@@ -106,17 +106,7 @@
   </div>
 </a>
 
-<!-- SCRIPT MENU -->
-<script>
-  const toggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('mobile-menu');
-
-  if (toggle && menu) {
-    toggle.addEventListener('click', () => {
-      menu.classList.toggle('active');
-    });
-  }
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>

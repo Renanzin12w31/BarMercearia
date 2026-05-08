@@ -12,7 +12,7 @@
 <body>
 
 <!-- HEADER -->
-<header class="header">
+<header class="header" id="site-header">
   <div class="logo">
     <div class="logo-icon">FO</div>
     <div>
@@ -36,11 +36,11 @@
   </a>
 
   <!-- BOTÃO MOBILE -->
-  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
 </header>
 
 <!-- MENU MOBILE -->
-<div class="mobile-menu" id="mobile-menu">
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
   <a href="index.html">Início</a>
   <a href="index.html#servicos">O que tem</a>
   <a href="sobre-nos.html">Sobre nós</a>
@@ -58,8 +58,10 @@
   <div class="hero-content">
     <span class="status">🟢 Aberto até 22h</span>
 
-    <h1 class="title">
-      Bebidas geladas e parada rápida em Piedade
+    <h1 class="title hero-title">
+      <span>Bebidas geladas</span>
+      <span>e parada rápida</span>
+      <span>em Piedade</span>
     </h1>
 
     <p class="hero-subtitle">
@@ -78,31 +80,31 @@
 </section>
 
 <!-- INFO -->
-<section class="info">
-  <div class="card">📍 Rod. Carolina Paes Graneiro, km 4</div>
-  <div class="card">🏙️ Piedade - SP</div>
-  <div class="card">⏰ Todos os dias • 8h às 22h</div>
+<section class="info reveal">
+  <div class="card reveal">📍 Rod. Carolina Paes Graneiro, km 4</div>
+  <div class="card reveal">🏙️ Piedade - SP</div>
+  <div class="card reveal">⏰ Todos os dias • 8h às 22h</div>
 </section>
 
 <!-- SERVIÇOS -->
-<section id="servicos" class="servicos">
-  <h2>O que você encontra</h2>
+<section id="servicos" class="servicos reveal">
+  <h2 class="reveal">O que você encontra</h2>
 
   <div class="grid">
-    <div class="item"><span class="item-icon">🥤</span><h3>Bebidas</h3><p>Bebidas sempre geladas, prontas para consumo.</p></div>
-    <div class="item"><span class="item-icon">🍗</span><h3>Salgados</h3><p>Opções rápidas para uma parada prática.</p></div>
-    <div class="item"><span class="item-icon">🎱</span><h3>Mesa de bilhar</h3><p>Espaço disponível para lazer no local.</p></div>
-    <div class="item"><span class="item-icon">🛒</span><h3>Mercearia</h3><p>Produtos básicos para o dia a dia.</p></div>
+    <div class="item reveal"><span class="item-icon">🥤</span><h3>Bebidas</h3><p>Bebidas sempre geladas, prontas para consumo.</p></div>
+    <div class="item reveal"><span class="item-icon">🍗</span><h3>Salgados</h3><p>Opções rápidas para uma parada prática.</p></div>
+    <div class="item reveal"><span class="item-icon">🎱</span><h3>Mesa de bilhar</h3><p>Espaço disponível para lazer no local.</p></div>
+    <div class="item reveal"><span class="item-icon">🛒</span><h3>Mercearia</h3><p>Produtos básicos para o dia a dia.</p></div>
   </div>
 </section>
 
 
 
 <!-- LOCALIZAÇÃO -->
-<section id="localizacao" class="localizacao">
+<section id="localizacao" class="localizacao reveal">
   <div class="localizacao-container">
 
-    <div class="localizacao-info">
+    <div class="localizacao-info reveal">
       <span class="section-label">Localização</span>
 
       <h2>Piedade - SP</h2>
@@ -116,7 +118,7 @@
       </a>
     </div>
 
-    <div class="localizacao-card">
+    <div class="localizacao-card reveal">
       <span>📍</span>
       <strong>Toque para abrir no Maps</strong>
     </div>
@@ -137,17 +139,7 @@
   </div>
 </a>
 
-<!-- SCRIPT MENU -->
-<script>
-  const toggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('mobile-menu');
-
-  if (toggle && menu) {
-    toggle.addEventListener('click', () => {
-      menu.classList.toggle('active');
-    });
-  }
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
