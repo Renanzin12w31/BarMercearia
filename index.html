@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Família Oliveira | Bar e Mercearia em Piedade - SP</title>
-  <meta name="description" content="Bar e Mercearia Família Oliveira em Piedade - SP. Bebidas geladas, salgados, mercearia e parada rápida na Rod. Carolina Paes Graneiro, km 4.">
+  <title>Bar e Mercearia Família Oliveira | Piedade - SP</title>
+  <meta name="description" content="Bar e Mercearia Família Oliveira em Piedade - SP. Bebidas geladas, salgados, mercearia e parada rápida na Rod Carolina Paes Graneiro, km4, Piedade - SP, 18170-000.">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home-page">
 
 <!-- HEADER -->
 <header class="header" id="site-header">
   <div class="logo">
     <div class="logo-icon">FO</div>
     <div>
-      <strong>Família Oliveira</strong>
-      <span>Bar e Mercearia</span>
+      <strong>Bar e Mercearia Família Oliveira</strong>
+      <span>Piedade - SP</span>
     </div>
   </div>
 
@@ -76,22 +76,45 @@
          Falar no WhatsApp
       </a>
     </div>
+
+    <div class="hero-metrics" aria-label="Destaques da casa">
+      <div class="hero-metric">
+        <strong>Geladas no ponto</strong>
+        <span>bar e conveni&ecirc;ncia</span>
+      </div>
+      <div class="hero-metric">
+        <strong>Parada r&aacute;pida</strong>
+        <span>na estrada</span>
+      </div>
+      <div class="hero-metric">
+        <strong>Todos os dias</strong>
+        <span>8h &agrave;s 22h</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="ambient-chip" aria-hidden="true">
+    <span>Atendimento local</span>
+    <strong>bar de bairro com mercearia para o dia a dia</strong>
   </div>
 </section>
 
 <!-- INFO -->
 <section class="info reveal">
-  <div class="card reveal">📍 Rod. Carolina Paes Graneiro, km 4</div>
+  <div class="card reveal">📍 Rod Carolina Paes Graneiro, km4, Piedade - SP, 18170-000</div>
   <div class="card reveal">🏙️ Piedade - SP</div>
   <div class="card reveal">⏰ Todos os dias • 8h às 22h</div>
 </section>
 
 <!-- SERVIÇOS -->
 <section id="servicos" class="servicos reveal">
+  <span class="section-kicker reveal">O que tem</span>
   <h2 class="reveal">O que você encontra</h2>
 
+  <p class="servicos-intro reveal">Bebidas geladas, conveniencia, parada rapida e atendimento familiar em um visual mais direto para quem esta passando por Piedade.</p>
+
   <div class="grid">
-    <div class="item reveal"><span class="item-icon">🥤</span><h3>Bebidas</h3><p>Bebidas sempre geladas, prontas para consumo.</p></div>
+    <div class="item item-featured reveal"><span class="item-icon">🥤</span><h3>Bebidas</h3><p>Bebidas sempre geladas, prontas para consumo.</p></div>
     <div class="item reveal"><span class="item-icon">🍗</span><h3>Salgados</h3><p>Opções rápidas para uma parada prática.</p></div>
     <div class="item reveal"><span class="item-icon">🎱</span><h3>Mesa de bilhar</h3><p>Espaço disponível para lazer no local.</p></div>
     <div class="item reveal"><span class="item-icon">🛒</span><h3>Mercearia</h3><p>Produtos básicos para o dia a dia.</p></div>
@@ -101,6 +124,24 @@
 
 
 <!-- LOCALIZAÇÃO -->
+<div class="market-strip" aria-label="Destaques da mercearia">
+  <div class="market-card reveal">
+    <span>Mais pedidos</span>
+    <strong>Bebida gelada para levar ou consumir no local</strong>
+    <small>Um destaque visual para refor&ccedil;ar o principal motivo da visita.</small>
+  </div>
+  <div class="market-card reveal">
+    <span>Funcionamento</span>
+    <strong>Aberto todos os dias at&eacute; 22h</strong>
+    <small>Informa&ccedil;&atilde;o importante sem depender s&oacute; do topo do site.</small>
+  </div>
+  <div class="market-card reveal">
+    <span>Local</span>
+    <strong>Atendimento simples, direto e de bairro</strong>
+    <small>Visual mais premium sem perder a sensa&ccedil;&atilde;o familiar.</small>
+  </div>
+</div>
+
 <section id="localizacao" class="localizacao reveal">
   <div class="localizacao-container">
 
@@ -109,9 +150,9 @@
 
       <h2>Piedade - SP</h2>
 
-      <p>Rod. Carolina Paes Graneiro, km 4</p>
+      <p>Rod Carolina Paes Graneiro, km4, Piedade - SP, 18170-000</p>
 
-      <a href="https://maps.app.goo.gl/wAfbWwbbdsgBBpvK9"
+      <a href="https://www.google.com/maps/search/?api=1&query=Bar%20e%20Mercearia%20Fam%C3%ADlia%20Oliveira%2C%20Rod%20Carolina%20Paes%20Graneiro%2C%20km4%2C%20Piedade%20-%20SP%2C%2018170-000"
          target="_blank"
          class="btn-primary">
          Abrir no Google Maps
@@ -140,6 +181,32 @@
 </a>
 
 <script src="script.js"></script>
+<script>
+  (function () {
+    const hero = document.querySelector('.hero');
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
+    if (!hero || reduceMotion || isMobile) return;
+
+    let ticking = false;
+
+    function updateHeroMotion() {
+      const progress = Math.min(window.scrollY / Math.max(hero.offsetHeight, 1), 1);
+      hero.style.setProperty('--hero-shift', `${progress * 34}px`);
+      hero.style.setProperty('--hero-lift', `${progress * 18}px`);
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', () => {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(updateHeroMotion);
+    }, { passive: true });
+
+    updateHeroMotion();
+  })();
+</script>
 
 </body>
 </html>
