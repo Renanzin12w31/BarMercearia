@@ -1,0 +1,382 @@
+[
+  {
+    "page": "home",
+    "viewport": "360",
+    "screenshot": "home-360.png",
+    "menuScreenshot": "home-360-menu.png",
+    "menuWorks": true,
+    "topMetrics": {
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflowElements": [],
+      "floatOverlaps": []
+    },
+    "bottomMetrics": {
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflowElements": [],
+      "floatOverlaps": []
+    }
+  },
+  {
+    "page": "home",
+    "viewport": "390",
+    "screenshot": "home-390.png",
+    "menuScreenshot": "home-390-menu.png",
+    "menuWorks": true,
+    "topMetrics": {
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflowElements": [],
+      "floatOverlaps": []
+    },
+    "bottomMetrics": {
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflowElements": [],
+      "floatOverlaps": []
+    }
+  },
+  {
+    "page": "home",
+    "viewport": "400",
+    "screenshot": "home-400.png",
+    "menuScreenshot": "home-400-menu.png",
+    "menuWorks": true,
+    "topMetrics": {
+      "clientWidth": 400,
+      "scrollWidth": 400,
+      "overflowElements": [],
+      "floatOverlaps": []
+    },
+    "bottomMetrics": {
+      "clientWidth": 400,
+      "scrollWidth": 400,
+      "overflowElements": [],
+      "floatOverlaps": []
+    }
+  },
+  {
+    "page": "home",
+    "viewport": "768",
+    "screenshot": "home-768.png",
+    "menuScreenshot": "home-768-menu.png",
+    "menuWorks": true,
+    "topMetrics": {
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflowElements": [],
+      "floatOverlaps": []
+    },
+    "bottomMetrics": {
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflowElements": [],
+      "floatOverlaps": []
+    }
+  },
+  {
+    "page": "home",
+    "viewport": "desktop",
+    "screenshot": "home-desktop.png",
+    "menuScreenshot": null,
+    "menuWorks": null,
+    "topMetrics": {
+      "clientWidth": 1366,
+      "scrollWidth": 1366,
+      "overflowElements": [],
+      "floatOverlaps": []
+    },
+    "bottomMetrics": {
+      "clientWidth": 1366,
+      "scrollWidth": 1366,
+      "overflowElements": [],
+      "floatOverlaps": []
+    }
+  },
+  {
+    "page": "contato",
+    "viewport": "360",
+    "screenshot": "contato-360.png",
+    "menuScreenshot": "contato-360-menu.png",
+    "menuWorks": true,
+    "topMetrics": {
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflowElements": [],
+      "floatOverlaps": []
+    },
+    "bottomMetrics": {
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflowElements": [],
+      "floatOverlaps": []
+    }
+  },
+  {
+    "page": "contato",
+    "viewport": "390",
+    "screenshot": "contato-390.png",
+    "menuScreenshot": "contato-390-menu.png",
+    "menuWorks": true,
+    "topMetrics": {
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflowElements": [],
+      "floatOverlaps": []
+    },
+    "bottomMetrics": {
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflowElements": [],
+      "floatOverlaps": []
+    }
+  },
+  {
+    "page": "contato",
+    "viewport": "400",
+    "screenshot": "contato-400.png",
+    "menuScreenshot": "contato-400-menu.png",
+    "menuWorks": true,
+    "topMetrics": {
+      "clientWidth": 400,
+      "scrollWidth": 400,
+      "overflowElements": [],
+      "floatOverlaps": []
+    },
+    "bottomMetrics": {
+      "clientWidth": 400,
+      "scrollWidth": 400,
+      "overflowElements": [],
+      "floatOverlaps": []
+    }
+  },
+  {
+    "page": "contato",
+    "viewport": "768",
+    "screenshot": "contato-768.png",
+    "menuScreenshot": "contato-768-menu.png",
+    "menuWorks": true,
+    "topMetrics": {
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflowElements": [],
+      "floatOverlaps": []
+    },
+    "bottomMetrics": {
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflowElements": [],
+      "floatOverlaps": []
+    }
+  },
+  {
+    "page": "contato",
+    "viewport": "desktop",
+    "screenshot": "contato-desktop.png",
+    "menuScreenshot": null,
+    "menuWorks": null,
+    "topMetrics": {
+      "clientWidth": 1366,
+      "scrollWidth": 1366,
+      "overflowElements": [],
+      "floatOverlaps": []
+    },
+    "bottomMetrics": {
+      "clientWidth": 1366,
+      "scrollWidth": 1366,
+      "overflowElements": [],
+      "floatOverlaps": []
+    }
+  },
+  {
+    "page": "localizacao",
+    "viewport": "360",
+    "screenshot": "localizacao-360.png",
+    "menuScreenshot": "localizacao-360-menu.png",
+    "menuWorks": true,
+    "topMetrics": {
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflowElements": [],
+      "floatOverlaps": []
+    },
+    "bottomMetrics": {
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflowElements": [],
+      "floatOverlaps": []
+    }
+  },
+  {
+    "page": "localizacao",
+    "viewport": "390",
+    "screenshot": "localizacao-390.png",
+    "menuScreenshot": "localizacao-390-menu.png",
+    "menuWorks": true,
+    "topMetrics": {
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflowElements": [],
+      "floatOverlaps": []
+    },
+    "bottomMetrics": {
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflowElements": [],
+      "floatOverlaps": []
+    }
+  },
+  {
+    "page": "localizacao",
+    "viewport": "400",
+    "screenshot": "localizacao-400.png",
+    "menuScreenshot": "localizacao-400-menu.png",
+    "menuWorks": true,
+    "topMetrics": {
+      "clientWidth": 400,
+      "scrollWidth": 400,
+      "overflowElements": [],
+      "floatOverlaps": []
+    },
+    "bottomMetrics": {
+      "clientWidth": 400,
+      "scrollWidth": 400,
+      "overflowElements": [],
+      "floatOverlaps": []
+    }
+  },
+  {
+    "page": "localizacao",
+    "viewport": "768",
+    "screenshot": "localizacao-768.png",
+    "menuScreenshot": "localizacao-768-menu.png",
+    "menuWorks": true,
+    "topMetrics": {
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflowElements": [],
+      "floatOverlaps": []
+    },
+    "bottomMetrics": {
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflowElements": [],
+      "floatOverlaps": []
+    }
+  },
+  {
+    "page": "localizacao",
+    "viewport": "desktop",
+    "screenshot": "localizacao-desktop.png",
+    "menuScreenshot": null,
+    "menuWorks": null,
+    "topMetrics": {
+      "clientWidth": 1366,
+      "scrollWidth": 1366,
+      "overflowElements": [],
+      "floatOverlaps": []
+    },
+    "bottomMetrics": {
+      "clientWidth": 1366,
+      "scrollWidth": 1366,
+      "overflowElements": [],
+      "floatOverlaps": []
+    }
+  },
+  {
+    "page": "sobre-nos",
+    "viewport": "360",
+    "screenshot": "sobre-nos-360.png",
+    "menuScreenshot": "sobre-nos-360-menu.png",
+    "menuWorks": true,
+    "topMetrics": {
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflowElements": [],
+      "floatOverlaps": []
+    },
+    "bottomMetrics": {
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "overflowElements": [],
+      "floatOverlaps": []
+    }
+  },
+  {
+    "page": "sobre-nos",
+    "viewport": "390",
+    "screenshot": "sobre-nos-390.png",
+    "menuScreenshot": "sobre-nos-390-menu.png",
+    "menuWorks": true,
+    "topMetrics": {
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflowElements": [],
+      "floatOverlaps": []
+    },
+    "bottomMetrics": {
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "overflowElements": [],
+      "floatOverlaps": []
+    }
+  },
+  {
+    "page": "sobre-nos",
+    "viewport": "400",
+    "screenshot": "sobre-nos-400.png",
+    "menuScreenshot": "sobre-nos-400-menu.png",
+    "menuWorks": true,
+    "topMetrics": {
+      "clientWidth": 400,
+      "scrollWidth": 400,
+      "overflowElements": [],
+      "floatOverlaps": []
+    },
+    "bottomMetrics": {
+      "clientWidth": 400,
+      "scrollWidth": 400,
+      "overflowElements": [],
+      "floatOverlaps": []
+    }
+  },
+  {
+    "page": "sobre-nos",
+    "viewport": "768",
+    "screenshot": "sobre-nos-768.png",
+    "menuScreenshot": "sobre-nos-768-menu.png",
+    "menuWorks": true,
+    "topMetrics": {
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflowElements": [],
+      "floatOverlaps": []
+    },
+    "bottomMetrics": {
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "overflowElements": [],
+      "floatOverlaps": []
+    }
+  },
+  {
+    "page": "sobre-nos",
+    "viewport": "desktop",
+    "screenshot": "sobre-nos-desktop.png",
+    "menuScreenshot": null,
+    "menuWorks": null,
+    "topMetrics": {
+      "clientWidth": 1366,
+      "scrollWidth": 1366,
+      "overflowElements": [],
+      "floatOverlaps": []
+    },
+    "bottomMetrics": {
+      "clientWidth": 1366,
+      "scrollWidth": 1366,
+      "overflowElements": [],
+      "floatOverlaps": []
+    }
+  }
+]
